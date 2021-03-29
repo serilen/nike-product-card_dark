@@ -121,15 +121,49 @@ html, body{
 	margin-bottom: 25px;
 }
 
-.product-desc__boolits {
-	font-size: 0;
-	text-align: left;
-	margin-bottom: 27px;
+.rating {
+  width: 70px;
+  height: 12px;
+  background: url('../image/Vector Smart Object.png');
+  background-repeat: space;
+  margin-bottom: 25px;
+  transition: all .0s ease-in;
 }
 
-.product-desc__boolit {
-	display: inline-block;
-	margin-right: 2px;
+.rating__star {
+  appearance: none;
+  height: 12px;
+  position: absolute;
 }
 
-f7bf16
+.rating__star:nth-of-type(1) {
+  width: 14px;
+  z-index: 5;
+}
+
+.rating__star:nth-of-type(2) {
+  width: 28px;
+  z-index: 4;
+}
+
+.rating__star:nth-of-type(3) {
+  width: 42px;
+  z-index: 3;
+}
+
+.rating__star:nth-of-type(4) {
+  width: 56px;
+  z-index: 2;
+}
+
+.rating__star:nth-of-type(5) {
+  width: 70px;
+  z-index: 1;
+}
+
+.rating__star:checked,
+.rating__star:hover {
+  background: url('../image/Vector Smart Object-yellow.png');
+  background-repeat: space;
+}
+
