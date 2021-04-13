@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main {
-	background-image: url('../image/main bg.png');
+	background-image: url('../image/main-bg.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 73px;
 }
 
-.img__responsive {
+.img-responsive {
 	max-width: 100%;
 	height: auto;
 	display: block;
@@ -101,20 +101,11 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #1f273f;
 	border-radius: 50%;
 	margin-right: 4px;
-	width: 13px;
-	height: 13px;
+	
 }
 
-.dots__item--white {
-	background-color: #fff;
-}
-
-.dots__item--orange {
-	background-color: #ed3333;
-}
-
-.dots__item--green {
-	background-color: #29e3ea;
+.dots__item:last-child {
+  margin-right: 0;
 }
 
 .dots__link {
@@ -122,11 +113,26 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100%;
 	border-radius: 50%;
 	border: 2px solid transparent;
+	background-color: #1f273f;
+	width: 13px;
+	height: 13px;
+}
+
+.dots__link--white {
+	background-color: #fff;
+}
+
+.dots__link--orange {
+	background-color: #ed3333;
+}
+
+.dots__link--green {
+	background-color: #29e3ea;
 }
 
 .dots__link:focus,
 .dots__link:hover {
-	border: 2px solid #6d727b;
+	border-color: #6d727b;
 }
 
 .product-card__info {
@@ -150,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 .rating {
 	width: 70px;
 	height: 12px;
-	background: url('../image/Vector Smart Object.png');
+	background: url('../image/vector-smart-object.png');
 	background-repeat: space;
 	margin-bottom: 25px;
 	transition: all .0s ease-in;
@@ -189,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .rating__star:checked,
 .rating__star:hover {
-	background: url('../image/Vector Smart Object-yellow.png');
+	background: url('../image/vector-smart-object-yellow.png');
 	background-repeat: space;
 }
 
@@ -212,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 8px 12px;
 	appearance: none;
 	background-color: inherit;
-	background-image: url('../image/Rectangle 2.png');
+	background-image: url('../image/rectangle.png');
 	background-repeat: no-repeat, repeat;
 	background-position: right 1em bottom 45%, 0 0;
 }
